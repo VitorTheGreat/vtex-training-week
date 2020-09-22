@@ -1,0 +1,113 @@
+{
+    "tab-layout#product": {
+        "children": [
+            "tab-list#product",
+            "tab-content#product"
+        ]
+    },
+    "tab-list#product": {
+        "children": [
+            "tab-list.item#product1",
+            "tab-list.item#product2"
+        ]
+    },
+    "tab-list.item#product1": {
+        "props": {
+            "tabId": "fotosconceituais",
+            "label": "Fotos Conceituais de items de cozinha",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-list.item#product2": {
+        "props": {
+            "tabId": "maisfotosconceituais",
+            "label": "Mais Fotos Conceituais de items de cozinha"
+        }
+    },
+    "tab-content#product": {
+        "children": [
+            "tab-content.item#product1",
+            "tab-content.item#product2"
+        ]
+    },
+    "tab-content.item#product1": {
+        "children": [
+            "slider-layout#conditional-product#1"
+        ],
+        "props": {
+            "tabId": "fotosconceituais"
+        }
+    },
+    "tab-content.item#product2": {
+        "children": [
+            "slider-layout#conditional-product#2"
+        ],
+        "props": {
+            "tabId": "maisfotosconceituais"
+        }
+    },
+    "slider-layout#conditional-product#1": {
+        "children": [
+            "image#tabimage1",
+            "image#tabimage2"
+        ],
+        "props": {
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": false
+            },
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "blockClass": "carousel"
+        }
+    },
+    "slider-layout#conditional-product#2": {
+        "children": [
+            "image#tabimage3",
+            "image#tabimage4"
+        ],
+        "props": {
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": false
+            },
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "blockClass": "carousel"
+        }
+    },
+    "image#tabimage1": {
+        "props": {
+            "src": "https://user-images.githubusercontent.com/43679629/92658168-81041500-f2cc-11ea-9ab0-b93e53f1c00e.jpg",
+            "maxWidth": "150px"
+        }
+    },
+    "image#tabimage2": {
+        "props": {
+            "src": "https://user-images.githubusercontent.com/43679629/92658169-819cab80-f2cc-11ea-9323-c8df874e1920.jpg",
+            "maxWidth": "150px"
+        }
+    },
+    "image#tabimage3": {
+        "props": {
+            "src": "https://user-images.githubusercontent.com/43679629/92658172-82354200-f2cc-11ea-92e5-f3aa3439a676.jpg",
+            "maxWidth": "150px"
+        }
+    },
+    "image#tabimage4": {
+        "props": {
+            "src": "https://user-images.githubusercontent.com/43679629/92658175-82354200-f2cc-11ea-967d-0e54579edb90.jpg",
+            "maxWidth": "150px"
+        }
+    }
+}
